@@ -18,6 +18,11 @@ const LongForm = () => {
           ...state,
           [action.payload.name]: action.payload.value,
         };
+      case "TOGGLE":
+        return {
+          ...state,
+          term: !state.term,
+        };
 
       //   case actionTypes.INPUT:
       //     return {
